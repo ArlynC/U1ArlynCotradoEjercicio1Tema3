@@ -48,6 +48,12 @@ public class MainActivity extends AppCompatActivity {
         transaction.replace(R.id.frame_container, FragmentoSeleccionado);
         transaction.commit();
     }
+    void vistaintenciones(){
+        FragmentoSeleccionado = new intenciones_f();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(R.id.frame_container, FragmentoSeleccionado);
+        transaction.commit();
+    }
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
@@ -66,11 +72,10 @@ public class MainActivity extends AppCompatActivity {
                     toolbar.setTitle("My Gifts");
                     return true;
                 case R.id.navigation_cart:
-
+                    vistaintenciones();
                     toolbar.setTitle("Cart");
                     return true;
                 case R.id.navigation_profile:
-                   // startActivity(new Intent(this, login_.class));
                     vistalogin();
                     toolbar.setTitle("Profile");
                     return true;
