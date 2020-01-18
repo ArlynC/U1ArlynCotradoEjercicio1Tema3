@@ -14,87 +14,28 @@
         android:layout_gravity="center_horizontal"/>
     <EditText
         android:id="@+id/Nombre"
+        android:hint="Usuario"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="150dp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
     <EditText
         android:id="@+id/txtpasword"
+        android:hint="Password"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
     <Button
         android:id="@+id/mibotonlogin"
+        android:text="INICIAR SESIÓN"
+        android:background="@color/colorPrimaryDark"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
 </FrameLayout>
-
-<!--
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/main_app_container">
-        <TextView
-            android:id="@+id/titulo"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bienvenido"
-            android:layout_marginBottom="20dp"
-            app:layout_constraintBottom_toTopOf="@id/edtusuario"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/edtusuario"
-            android:layout_marginBottom="20dp"
-            android:layout_width="220dp"
-            android:hint="Usuario"
-            app:helperText="Nombre y Apellido"
-            app:endIconMode="clear_text"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/edtpassword"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text"/>
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/edtpassword"
-            android:layout_width="220dp"
-            android:hint="Password"
-            app:helperText="Minimo 8 caracteres"
-            app:endIconMode="password_toggle"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/btnlogin"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"/>
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <Button
-            android:id="@+id/btnlogin"
-            android:text="INICIAR SESIÓN"
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            />
-    </androidx.constraintlayout.widget.ConstraintLayout>
--->
