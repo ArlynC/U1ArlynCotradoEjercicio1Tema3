@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">U1Tema3Bottomnav</string>
+    <string name="title_shop">Shop</string>
+    <string name="title_gifts">Gifts</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_profile">Profile</string>
+    <string-array name="tipo">
+        <item>Lista</item>
+        <item>Grilla</item>
+    </string-array>
+    <string-array name="milista">
+        <item>Peru</item>
+        <item>Bolivia</item>
+        <item>Argentina</item>
+        <item>Ecuador</item>
+    </string-array>
+</resources>
