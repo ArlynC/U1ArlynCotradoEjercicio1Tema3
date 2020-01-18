@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese datos del alumno"
+        android:layout_marginTop="40dp"
+        android:textSize="24sp"
+        android:textColor="#099898"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <Button
+        android:id="@+id/btncambiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Verificar"
+        android:text="ENVIAR"
+        android:background="#099898"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp"/>
+
+    <EditText
+        android:id="@+id/edtape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp"/>
+
+    <EditText
+        android:id="@+id/edtnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:layout_marginBottom="200dp"/>
+
+    <Spinner
+        android:id="@+id/spgi"
+        android:layout_width="208dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/gi"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"/>
+
+    <EditText
+        android:id="@+id/edtgrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spgi"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Grado de instruccion"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+    <Spinner
+        android:id="@+id/spSe"
+        android:layout_width="214dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/sexo"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/edtsexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spSe"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Sexo"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione un grado de instrucción"
+        android:textColor="#099898"
+        android:layout_gravity="center"
+        android:layout_marginBottom="110dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione su sexo "
+        android:textColor="#099898"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+</FrameLayout>

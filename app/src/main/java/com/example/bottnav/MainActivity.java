@@ -54,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
         transaction.replace(R.id.frame_container, FragmentoSeleccionado);
         transaction.commit();
     }
+    void vistaform(){
+        FragmentoSeleccionado = new formulario();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(R.id.frame_container, FragmentoSeleccionado);
+        transaction.commit();
+    }
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
@@ -68,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                     toolbar.setTitle("Shop");
                     return true;
                 case R.id.navigation_gifts:
-                    vistagrid();
+                    vistaform();
                     toolbar.setTitle("My Gifts");
                     return true;
                 case R.id.navigation_cart:
