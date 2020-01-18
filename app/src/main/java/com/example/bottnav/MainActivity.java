@@ -71,19 +71,19 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_shop:
                     Llamarvista();
-                    toolbar.setTitle("Shop");
+                    toolbar.setTitle("Lista");
                     return true;
                 case R.id.navigation_gifts:
                     vistaform();
-                    toolbar.setTitle("My Gifts");
+                    toolbar.setTitle("Formulario");
                     return true;
                 case R.id.navigation_cart:
                     vistaintenciones();
-                    toolbar.setTitle("Cart");
+                    toolbar.setTitle("Intenciones");
                     return true;
                 case R.id.navigation_profile:
                     vistalogin();
-                    toolbar.setTitle("Profile");
+                    toolbar.setTitle("Login");
                     return true;
             }
             return false;

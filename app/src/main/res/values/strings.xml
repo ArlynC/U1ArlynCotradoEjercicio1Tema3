@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">U1Tema3Bottomnav</string>
-    <string name="title_shop">Shop</string>
-    <string name="title_gifts">Gifts</string>
-    <string name="title_cart">Cart</string>
-    <string name="title_profile">Profile</string>
+    <string name="title_shop">Lista</string>
+    <string name="title_gifts">Fromulario</string>
+    <string name="title_cart">Intenciones</string>
+    <string name="title_profile">Login</string>
     <string-array name="tipo">
         <item>Lista</item>
         <item>Grilla</item>
