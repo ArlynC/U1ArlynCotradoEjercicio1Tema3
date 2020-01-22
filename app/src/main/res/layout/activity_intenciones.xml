@@ -5,43 +5,44 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".Intenciones">
+    tools:context="com.example.bottnav.intenciones_f">
         <Button
+            android:id="@+id/web"
+            android:layout_marginTop="40dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="web"
             android:text="Informacion oficial intenciones" />
         <Button
+            android:id="@+id/llamar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="Llamar"
             android:text="LLamar por telefono al profesor" />
         <Button
+            android:id="@+id/maps"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="maps"
             android:text="Google Maps" />
         <Button
+            android:id="@+id/foto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="foto"
             android:text="Tomar Foto" />
         <Button
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="email"
             android:text="Enviar un correo al Ing. del curso" />
         <Button
+            android:id="@+id/whatsapp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="whatsapp"
             android:text="Enviar mensaje Whatsapp"
             tools:ignore="OnClick" />
 
     <Button
+        android:id="@+id/navegacion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="navegacion"
         android:text="Iniciar navegacion"
         tools:ignore="OnClick" />
 </LinearLayout>
