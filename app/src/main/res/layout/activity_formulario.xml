@@ -58,33 +58,32 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toTopOf="@id/edtg"/>
 
-
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
         android:id="@+id/edtg"
-        android:layout_marginBottom="10dp"
         android:layout_width="220dp"
+        android:layout_height="42dp"
         android:layout_below="@+id/spgi"
-        android:hint="Grado de Instruccion"
-        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:hint="Grado de instruccion"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="10dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btnlogin"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:focusable="false"/>
-    </com.google.android.material.textfield.TextInputLayout>
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+
+
+
     <Button
         android:id="@+id/btnlogin"
-        android:text="ENVIAR"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="ENVIAR"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        />
+        app:layout_constraintVertical_bias="0.71" />
 </androidx.constraintlayout.widget.ConstraintLayout>

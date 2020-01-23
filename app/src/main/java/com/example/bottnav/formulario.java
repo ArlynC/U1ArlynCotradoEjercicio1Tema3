@@ -53,9 +53,9 @@ public class formulario extends Fragment {
         View view = inflater.inflate(R.layout.activity_formulario, container, false);
 
 
-/*
-        mispinner1=(Spinner) view.findViewById(R.id.spgi);
-        edtgi=(EditText)view.findViewById(R.id.edtg);
+
+        mispinner1=view.findViewById(R.id.spgi);
+        edtgi=view.findViewById(R.id.edtg);
         mispinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> arg0,
@@ -70,7 +70,7 @@ public class formulario extends Fragment {
             public void onNothingSelected(AdapterView<?> arg0) {
 // TODO Auto-generated method stub
             }
-        });*/
+        });
 
 
         return view;

@@ -45,8 +45,8 @@ public class intenciones_f extends Fragment {
         btnllamar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_DIAL,
-                        Uri.parse("tel:978737250"));
+                Intent intent = new Intent(Intent.ACTION_CALL,
+                        Uri.parse("tel:952000243"));
                 startActivity(intent);
             }
         });
